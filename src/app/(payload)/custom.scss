@@ -1,0 +1,95 @@
+/* ═════════════════════════════════════════════════════════════════
+   THAWWAFI TOUR — PAYLOAD CMS ADMIN THEME OVERRIDES
+   Pine Green (#1F2E23) & Luxury Gold (#C5A869)
+   ═════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Brand Accent: Gold Thawwafi */
+  --theme-accent: #c5a869;
+  --theme-accent-contrast: #16211a;
+
+  /* Primary Brand colors */
+  --thawwafi-pine: #1f2e23;
+  --thawwafi-gold: #c5a869;
+  --thawwafi-gold-light: #e8dbbe;
+  --thawwafi-gold-dark: #a68b4c;
+}
+
+/* Light Mode Overrides */
+html[data-theme='light'] {
+  --theme-success-500: #1f2e23;
+  --theme-elevation-50: #fbf9f4;
+  --theme-elevation-100: #f5f0e6;
+  --theme-border-color: #e5dfd3;
+
+  /* Sidebar styling */
+  .nav {
+    background-color: #f7f3eb;
+    border-right: 1px solid #e5dfd3;
+  }
+}
+
+/* Dark Mode Overrides */
+html[data-theme='dark'] {
+  --theme-elevation-0: #121914;
+  --theme-elevation-50: #16211a;
+  --theme-elevation-100: #1f2e23;
+  --theme-elevation-150: #25382b;
+  --theme-border-color: #2e4435;
+
+  .nav {
+    background-color: #121914;
+    border-right: 1px solid #2e4435;
+  }
+}
+
+/* ── UI/UX Polish: Buttons & Interactions ── */
+.btn--style-primary {
+  background-color: #c5a869 !important;
+  color: #16211a !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+
+  &:hover {
+    background-color: #d4af37 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(197, 168, 105, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+/* ── Collection Cards on Dashboard ── */
+.card {
+  border-radius: 12px !important;
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1) !important;
+
+  &:hover {
+    border-color: #c5a869 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ── Tables & List Views ── */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ── Nav Links Hover ── */
+.nav__link:hover {
+  color: #c5a869 !important;
+}
+
+/* ── Form Inputs Focus State ── */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #c5a869 !important;
+  outline-color: #c5a869 !important;
+  box-shadow: 0 0 0 2px rgba(197, 168, 105, 0.2) !important;
+}
